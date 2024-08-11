@@ -18,9 +18,14 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<java.version>22</java.version>
-		<javafx.version>22.0.1</javafx.version>
-<!--		<javafx.version>21.0.3</javafx.version>-->
+		<java.version>18</java.version>
+		<javafx.version>18.0.2</javafx.version>
+<!--		<java.version>20</java.version>-->
+<!--		<javafx.version>20.0.2</javafx.version>-->
+<!--		<java.version>21</java.version>-->
+<!--		<javafx.version>21.0.4</javafx.version>-->
+		<!--		<java.version>22</java.version>-->
+		<!--		<javafx.version>22.0.2</javafx.version>-->
 
 		<!-- maven compiler does not work with combination of source/target and release,
 		     so release will not be used until that is fixed
@@ -137,6 +142,11 @@
 			<dependency>
 				<groupId>r-uu</groupId>
 				<artifactId>r-uu.app-demo-common</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>r-uu</groupId>
+				<artifactId>r-uu.app-demo-client</artifactId>
 				<version>0.0.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
@@ -321,6 +331,16 @@
 			</dependency>
 			<dependency>
 				<groupId>r-uu</groupId>
+				<artifactId>r-uu.lib-jsonb</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>r-uu</groupId>
+				<artifactId>r-uu.lib-jsonb-demo</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>r-uu</groupId>
 				<artifactId>r-uu.lib-junit</artifactId>
 				<version>0.0.1-SNAPSHOT</version>
 			</dependency>
@@ -336,6 +356,11 @@
 			</dependency>
 
 			<!-- external dependencies -->
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-databind</artifactId>
+				<version>2.17.2</version>
+			</dependency>
 			<dependency>
 				<groupId>com.tngtech.archunit</groupId>
 				<artifactId>archunit</artifactId>
@@ -406,11 +431,11 @@
 				<artifactId>jakarta.xml.bind-api</artifactId>
 				<version>4.0.0</version>
 			</dependency>
-			<dependency>
-				<groupId>org.jgrapht</groupId>
-				<artifactId>jgrapht-core</artifactId>
-				<version>1.5.2</version>
-			</dependency>
+<!--			<dependency>-->
+<!--				<groupId>org.jgrapht</groupId>-->
+<!--				<artifactId>jgrapht-core</artifactId>-->
+<!--				<version>1.5.2</version>-->
+<!--			</dependency>-->
 			<!-- make sure to add log4j-api and log4j-core to module dependencies if you want to use log4j -->
 			<!-- in addition make sure to add lombok and log4j-slf4j-impl to module dependencies if you want to use lombok and log4j -->
 			<dependency>
@@ -546,6 +571,11 @@
 				<version>${javafx.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>org.openjfx</groupId>
+				<artifactId>javafx-maven-plugin</artifactId>
+				<version>0.0.8</version>
+			</dependency>
+			<dependency>
 				<groupId>javax.xml.registry</groupId>
 				<artifactId>javax.xml.registry-api</artifactId>
 				<version>1.0.8</version>
@@ -643,8 +673,8 @@
 						<source>${java.version}</source>
 						<target>${java.version}</target>
 <!--					<release>${java.version}</release>-->
-						<enablePreview>true</enablePreview>
-						<compilerArgs>--enable-preview</compilerArgs>
+<!--						<enablePreview>true</enablePreview>-->
+<!--						<compilerArgs>&#45;&#45;enable-preview</compilerArgs>-->
 						<annotationProcessorPaths>
 <!--
 	following official hibernate docs at
@@ -707,7 +737,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-javadoc-plugin</artifactId>
-					<version>3.6.3</version>
+					<version>3.8.0</version>
 					<executions>
 						<execution>
 							<id>attach-javadocs</id>
@@ -725,7 +755,7 @@
 <!--							<version>2.1.1</version>-->
 <!--						</docletArtifact>-->
 						<additionalOptions>
-							<additionalOption>--enable-preview</additionalOption>
+<!--							<additionalOption>&#45;&#45;enable-preview</additionalOption>-->
 						</additionalOptions>
 						<quiet>true</quiet>
 					</configuration>
@@ -734,6 +764,11 @@
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-war-plugin</artifactId>
 					<version>3.4.0</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-assembly-plugin</artifactId>
+					<version>3.7.1</version>
 				</plugin>
 <!--				<plugin>-->
 <!--					<groupId>org.projektlombok</groupId>-->

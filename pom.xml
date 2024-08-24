@@ -161,32 +161,32 @@
 			</dependency>
 			<dependency>
 				<groupId>r-uu</groupId>
-				<artifactId>r-uu.app-jeee-raaa</artifactId>
+				<artifactId>r-uu.app-jeeeraaah</artifactId>
 				<version>0.0.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>r-uu</groupId>
-				<artifactId>r-uu.app-jeee-raaa-client</artifactId>
+				<artifactId>r-uu.app-jeeeraaah-client</artifactId>
 				<version>0.0.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>r-uu</groupId>
-				<artifactId>r-uu.app-jeee-raaa-client-fx</artifactId>
+				<artifactId>r-uu.app-jeeeraaah-client-fx</artifactId>
 				<version>0.0.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>r-uu</groupId>
-				<artifactId>r-uu.app-jeee-raaa-client-rs</artifactId>
+				<artifactId>r-uu.app-jeeeraaah-client-rs</artifactId>
 				<version>0.0.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>r-uu</groupId>
-				<artifactId>r-uu.app-jeee-raaa-common</artifactId>
+				<artifactId>r-uu.app-jeeeraaah-common</artifactId>
 				<version>0.0.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>r-uu</groupId>
-				<artifactId>r-uu.app-jeee-raaa-server</artifactId>
+				<artifactId>r-uu.app-jeeeraaah-server</artifactId>
 				<version>0.0.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
@@ -396,6 +396,16 @@
 				<artifactId>archunit</artifactId>
 				<version>1.3.0</version>
 			</dependency>
+			<dependency>
+				<groupId>org.controlsfx</groupId>
+				<artifactId>controlsfx</artifactId>
+				<version>11.2.1</version>
+			</dependency>
+			<dependency>
+				<groupId>org.controlsfx</groupId>
+				<artifactId>fxsampler</artifactId>
+				<version>1.0.11</version>
+			</dependency>
 	        <dependency>
 				<groupId>jakarta.activation</groupId>
 				<artifactId>jakarta.activation-api</artifactId>
@@ -589,6 +599,11 @@
 				<groupId>io.smallrye.config</groupId>
 				<artifactId>smallrye-config-core</artifactId>
 				<version>3.5.4</version>
+			</dependency>
+			<dependency>
+				<groupId>org.openjfx</groupId>
+				<artifactId>javafx-base</artifactId>
+				<version>${javafx.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.openjfx</groupId>

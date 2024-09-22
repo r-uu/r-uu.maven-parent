@@ -18,20 +18,23 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<java.version>18</java.version>
-		<javafx.version>18.0.2</javafx.version>
+<!-- remember this one for native executables -->
+<!--		<java.version>18</java.version>-->
+<!--		<javafx.version>18.0.2</javafx.version>-->
 <!--		<java.version>20</java.version>-->
 <!--		<javafx.version>20.0.2</javafx.version>-->
 <!--		<java.version>21</java.version>-->
 <!--		<javafx.version>21.0.4</javafx.version>-->
-		<!--		<java.version>22</java.version>-->
-		<!--		<javafx.version>22.0.2</javafx.version>-->
+<!--		<java.version>22</java.version>-->
+<!--		<javafx.version>22.0.2</javafx.version>-->
+		<java.version>23</java.version>
+		<javafx.version>23</javafx.version>
 
 		<!-- maven compiler does not work with combination of source/target and release,
 		     so release will not be used until that is fixed
 		 -->
-		<maven.compiler.source>${java.version}</maven.compiler.source>
-		<maven.compiler.target>${java.version}</maven.compiler.target>
+<!--		<maven.compiler.source>${java.version}</maven.compiler.source>-->
+<!--		<maven.compiler.target>${java.version}</maven.compiler.target>-->
 
 		<maven.compiler.plugin.version>3.13.0</maven.compiler.plugin.version>
 <!--		<maven.surefire.plugin.version>3.2.5</maven.surefire.plugin.version>-->
@@ -720,9 +723,9 @@
 					<artifactId>maven-compiler-plugin</artifactId>
 					<version>${maven.compiler.plugin.version}</version>
 					<configuration>
-						<source>${java.version}</source>
-						<target>${java.version}</target>
-<!--					<release>${java.version}</release>-->
+<!--						<source>${java.version}</source>-->
+<!--						<target>${java.version}</target>-->
+						<release>${java.version}</release>
 <!--						<enablePreview>true</enablePreview>-->
 <!--						<compilerArgs>&#45;&#45;enable-preview</compilerArgs>-->
 						<annotationProcessorPaths>

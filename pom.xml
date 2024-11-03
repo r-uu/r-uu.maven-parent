@@ -573,17 +573,17 @@
 			<dependency>
 				<groupId>org.glassfish.jersey.core</groupId>
 				<artifactId>jersey-client</artifactId>
-	            <version>3.1.7</version>
+	            <version>3.1.8</version>
 			</dependency>
 			<dependency>
 				<groupId>org.glassfish.jersey.inject</groupId>
 				<artifactId>jersey-hk2</artifactId>
-	            <version>3.1.7</version>
+	            <version>3.1.8</version>
 			</dependency>
 			<dependency>
 				<groupId>org.glassfish.jersey.media</groupId>
 				<artifactId>jersey-media-json-binding</artifactId>
-			    <version>3.1.7</version>
+			    <version>3.1.8</version>
 			</dependency>
 			<dependency>
 				<groupId>org.junit</groupId>
@@ -814,12 +814,12 @@
 					<artifactId>maven-javadoc-plugin</artifactId>
 					<version>3.8.0</version>
 					<executions>
-						<execution>
-							<id>attach-javadocs</id>
-							<goals>
-								<goal>jar</goal>
-							</goals>
-						</execution>
+<!--						<execution>-->
+<!--							<id>attach-javadocs</id>-->
+<!--							<goals>-->
+<!--								<goal>jar</goal>-->
+<!--							</goals>-->
+<!--						</execution>-->
 					</executions>
 					<configuration>
 						<!-- works, but dramatically slows down build ... -->

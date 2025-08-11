@@ -202,6 +202,11 @@
 				<artifactId>r-uu.app-jeeeraaah-server</artifactId>
 				<version>0.0.1-SNAPSHOT</version>
 			</dependency>
+            <dependency>
+                <groupId>r-uu</groupId>
+                <artifactId>r-uu.app-postgres</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
 			<dependency>
 				<groupId>r-uu</groupId>
 				<artifactId>r-uu.lib</artifactId>
@@ -227,6 +232,21 @@
 				<artifactId>r-uu.lib-cdi-se</artifactId>
 				<version>0.0.1-SNAPSHOT</version>
 			</dependency>
+            <dependency>
+                <groupId>r-uu</groupId>
+                <artifactId>r-uu.lib-postgres</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>r-uu</groupId>
+                <artifactId>r-uu.lib-util-config</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>r-uu</groupId>
+                <artifactId>r-uu.lib-util-config-demo</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
 			<dependency>
 				<groupId>r-uu</groupId>
 				<artifactId>r-uu.lib-fx</artifactId>
